@@ -28,26 +28,27 @@ class _MyAppState extends State<MyApp> {
     ];
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('Basic Quiz App'),
-          ),
-          body: Column(
-            children: <Widget>[
-              Text(questions[questionIndex]),
-              RaisedButton(
-                child: Text('Answer 01'),
-                onPressed: answerQuestion,
-              ),
-              RaisedButton(
-                child: Text('Answer 02'),
-                onPressed: answerQuestion,
-              ),
-              RaisedButton(
-                child: Text('Answer 03'),
-                onPressed: answerQuestion,
-              ),
-            ],
-          )),
+        appBar: AppBar(
+          title: Text('Basic Quiz App'),
+        ),
+        body: Column(
+          children: <Widget>[
+            Text(questions[questionIndex]),
+            RaisedButton(
+              child: Text('Answer 01'),
+              onPressed: answerQuestion,
+            ),
+            RaisedButton(
+              child: Text('Answer 02'),
+              onPressed: answerQuestion,
+            ),
+            RaisedButton(
+              child: Text('Answer 03'),
+              onPressed: answerQuestion,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
