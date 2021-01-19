@@ -1,6 +1,7 @@
 # chapter2
 
 A new Flutter project.
+Flutter Basic Quiz App.
 
 ## Getting Started
 
