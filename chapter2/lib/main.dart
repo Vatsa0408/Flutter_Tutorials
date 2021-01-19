@@ -15,6 +15,9 @@ class _MyAppState extends State<MyApp> {
   void answerQuestion() {
     setState(() {
       questionIndex = questionIndex + 1;
+      if (questionIndex == 3) {
+        questionIndex = 0;
+      }
     });
 
     print(questionIndex);
@@ -24,7 +27,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     var questions = [
       'What\'s your favourite color?',
-      'What\'s youre favourite place?'
+      'What\'s your favourite place?',
+      'What\'s your favourite animal?'
     ];
     return MaterialApp(
       home: Scaffold(
