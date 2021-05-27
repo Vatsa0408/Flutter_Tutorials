@@ -61,7 +61,7 @@ class HomeState extends State<Home> {
                   SizedBox(height: 25),
                   CustomInput(
                     icon: Icons.location_on,
-                    hintText: 'Type a city or airport name',
+                    hintText: 'Type a city',
                     onSave: (String value) => this._data.location = value,
                   ),
                   SizedBox(height: 20),
@@ -163,8 +163,14 @@ class HomeState extends State<Home> {
                     ],
                   ),
                   SizedBox(height: 30),
+                  CustomInput(
+                    icon: Icons.location_on,
+                    hintText: 'Type your weight requirements',
+                    onSave: (String value) => this._data.truckWeight = value,
+                  ),
+                  SizedBox(height: 30),
                   GlowButton(
-                      title: 'FIND YOUR CAR',
+                      title: 'FIND YOUR TRUCKS',
                       onTap: () {
                         this._searchFormKey.currentState.save();
                         if (this._searchFormKey.currentState.validate()) {

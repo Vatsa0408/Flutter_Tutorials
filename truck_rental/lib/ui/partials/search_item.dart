@@ -5,7 +5,7 @@ class SearchItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 10),
+      margin: EdgeInsets.only(bottom: 5),
       padding: Styles.appPadding,
       decoration: BoxDecoration(
           color: Styles.singleItemBg, borderRadius: BorderRadius.circular(3)),
@@ -18,18 +18,18 @@ class SearchItem extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text('Nukus Rent Card'),
-                    Text('Nukus Rent Card'),
+                    Text('Truck Name'),
+                    Text('Truck Specifications'),
                   ],
                 ),
               ),
               CircleAvatar(
-                child: Column(
-                  children: <Widget>[
-                    Text('23'),
-                    Text('23'),
-                  ],
-                ),
+                child: Text('\$'),
+                // children: <Widget>[
+                //   Text('23'),
+                //   Text('23'),
+                // ],
+                // ),
               )
             ],
           )

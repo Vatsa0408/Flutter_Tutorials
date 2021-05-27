@@ -24,7 +24,7 @@ class SearchList extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text('8 Fleets Available',
+                        Text('# Fleets Available',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 23,
@@ -36,13 +36,13 @@ class SearchList extends StatelessWidget {
                             Icon(Icons.location_on,
                                 size: 17, color: Colors.white70),
                             SizedBox(width: 5),
-                            Text('8 Fleets Available',
+                            Text('# Fleets Available',
                                 style: TextStyle(color: Colors.white70)),
                             SizedBox(width: 10),
                             Icon(Icons.calendar_today,
                                 size: 17, color: Colors.white70),
                             SizedBox(width: 5),
-                            Text('23 - 26 August',
+                            Text('Start-End Date',
                                 style: TextStyle(color: Colors.white70)),
                           ],
                         ),
